@@ -1,0 +1,71 @@
+.advertisement {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  &__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    border: 1px solid #eee;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  &__title {
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    /* 200% */
+    letter-spacing: 1.08px;
+  }
+  
+  &__subtitle {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.48px;
+  }
+}
+
+
+
+.div__proposite {
+  position: relative;
+  overflow: hidden;
+}
+
+.div__proposite:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__text {
+    width: 322px;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+    margin: 63px 24px;
+  }
+}
+

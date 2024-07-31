@@ -1,0 +1,42 @@
+// COLORS
+
+@import "./utils/variables";
+
+@import './utils/placeholder';
+
+@import './utils/mixins';
+
+// BASE
+
+@import "./base/reset";
+
+@import './base/common' ;
+
+// INDEX
+
+
+@import './components/component_html/mobile-menu';
+
+@import './components/component_html/header';
+
+
+@import  './components/component_html/hero';
+
+@import './components/component_html/information';
+
+
+@import  './components/component_html/works';
+
+@import  './components/component_html/team';
+
+@import  './components/component_html/clients';
+
+@import  './components/component_html/footer';
+
+@import  './components/component_html/modal';
+
+// PORTFOLIO
+
+@import  './components/component_portfolio/advertisement';
+
+@import  './components/component_portfolio/buttons';
